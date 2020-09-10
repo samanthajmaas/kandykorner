@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useEffect } from "react"
 import { EmployeeContext } from "./EmployeeProvider"
 import { LocationContext } from "../locations/LocationsProvider"
+import "./Employees.css"
 
 
 

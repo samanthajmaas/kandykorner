@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react"
 import { EmployeeContext } from "./EmployeeProvider"
 import { Employee } from "./Employee"
 import { LocationContext } from "../locations/LocationsProvider"
+import "./Employees.css"
 
 export const EmployeeList = (props) => {
     const { employees, getEmployees } = useContext(EmployeeContext)

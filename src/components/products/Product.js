@@ -1,4 +1,5 @@
 import React from "react"
+import "./Products.css"
 
 export const Product = ({product, productType}) => (
     <section className="product">
