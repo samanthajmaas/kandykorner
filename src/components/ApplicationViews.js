@@ -12,6 +12,7 @@ import { OrderList } from "./customers/OrderList"
 import {PurchaseProvider} from "./customers/CustomerCandyProvider"
 import { CustomerProvider } from "./customers/CustomerProvider"
 import { CustomerList } from "./customers/CustomerList"
+import { ProductSearch } from "./products/ProductSearch"
 
 export const ApplicationViews = (props) => {
     return (
@@ -33,7 +34,10 @@ export const ApplicationViews = (props) => {
                 <PurchaseProvider>
                     <TypeProvider>
                         <Route exact path="/Products" render={
-                            props => <ProductList {...props}/>
+                            props => <>
+                            <ProductSearch />
+                            <ProductList {...props}/>
+                            </>
                         }>
                         </Route>
                     </TypeProvider>
