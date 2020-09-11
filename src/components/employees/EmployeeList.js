@@ -26,9 +26,9 @@ export const EmployeeList = (props) => {
         <article className="employeeList">
             {
                 employees.map(employee => {
-                    const workplace = locations.find(location => location.id === employee.locationId) || {}
+                    const location = locations.find(location => location.id === employee.locationId) || {}
 
-                   return <Employee key={employee.id} employee={employee} location={workplace}/>
+                   return <Employee key={employee.id} employee={employee} location={location} {...props}/>
 
                 })
             }
